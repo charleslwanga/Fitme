@@ -50,58 +50,90 @@
           <h3 id="center">HELLO WELCOME TO OUR FITNESS SITE</h3>
           <h1 id="fitme2">FITME</h1>
           <h2 id="knowmore">KNOW MORE</h2>
-          <button type="button" class="btn" id="button" href="classes.html">CLASSES</button>
+          <button type="button" class="btn" id="button">CLASSES</button>
           <img src="image3.jpg" alt="fitness girl" height="500px" id="top">
         </div>
 
         <!--navbar section-->
         <div class="row fixed-top" id="row2">
-          <a id="home" class="all"><label>HOME</label></a>
+          <a id="home" class="all"href="index.html"><label>HOME</label></a>
           <p class="posline">|</p>
           <a id="news" class="all"><label>NEWS</label></a>
           <p class="posline">|</p>
           <a id="recipe" class="all"><label>RECIPE</label></a>
           <p class="posline">|</p>
-          <a id="classes" class="all" href="classes.html"><label>CLASSES</label></a>
+          <a id="classes" class="all"><label>CLASSES</label></a>
           <p class="posline">|</p>
           <a id="about" class="all"><label>ABOUT</label></a>
         </div>
 
-        <!--instructors section-->
-        <div class="row" id="row3">
-          <h1 class="text-center" id="our">OUR INSTRUCTORS</h1>
+        <!--timetable-->
+        <div class="row row3 " id="row3">
+          <h1 class="text-center" id="our">OUR SCHEDULE</h1>
           <p class="text-center" id="posline2">-</p>
-          <img src="instructors/ivy.jpg" alt="image of ivy" height="300px" width="340px" id="ivy">
-          <img src="instructors/chaarles.jpeg" alt="image of charles" height="300px" width="340px" id="charles">
+          <div class=" classes  text-center col-lg-9" id="classes"> <!--different classes -->
+                    <table class="text-center">
+                      <tr>
+                        <th>Days</th>
+                        <th>8.00am</th>
+                        <th>2.00pm</th>
+                        <th>6.00pm</th>
+                      </tr>
+                      <tr>
+                        <td>Monday</td>
+                        <td>Salsa</td>
+                        <td>Aerobics</td>
+                        <td>Yoga</td>
+                      </tr>
+                      <tr>
+                        <td>Tuesday</td>
+                        <td>Aerobics</td>
+                        <td>Salsa</td>
+                        <td>Yoga</td>
+                      </tr>
+                      <tr>
+                        <td>Wednesday</td>
+                        <td>Yoga</td>
+                        <td>Aerobics</td>
+                        <td>Salsa</td>
+                      </tr>
+                      <tr>
+                        <td>Thursday</td>
+                        <td>Salsa</td>
+                        <td>Yoga</td>
+                        <td>Aerobics</td>
+                      </tr>
+                      <tr>
+                        <td>Friday</td>
+                        <td>Yoga</td>
+                        <td>Salsa</td>
+                        <td>Aerobics</td>
+                      </tr>
+                    </table>
+               </div>
+          <!--charges-->
+            <div class=" price col-lg-3">
+              <h5>Charges for the classes</h5>
+              <p>5 classes at ksh 2,500/=</p>
+              <p>8 classes at ksh 3,000/=</p>
+              <p>10 classes at ksh 3,500/=</p>
+              <p>15 classes at ksh 4,500/=</p>
+            </div>
 
-          <!--profiles-->
-          <div id="bina">
-            <h2>Ivy Bina</h2>
-            <p class="highlight">"My love and passion for fitness motivates me<br/> to improve your life in the best possible manner I can.<br/>
-            I will tkae you through Salsa and Aerobics"</p>
-          </div>
-          <div id="charles2">
-            <h2>Charles</h2>
-            <p class="highlight">"As a well skilled fitness trainer I can enable you achieve<br/> your daily set goals to achieve the perfect body.<br/>
-            I will take you through Yoga, Salsa and Aerobics."</p>
-          </div>
-
-          <div id="description">
-            <h2 class="text-center" id="exercise">Exercise Types Affect the Brain Differently</h2>
+              </div>
+          <div id="description1">
+            <h2 class="text-center" id="exercise1">You can book here!</h2>
             <p class="text-center" id="posline5">-</p>
-            <p class="text-center" id="paragraph">Plenty of research has determined that regular exfloat:left; ercise benefits brain health. A recent large review got more specific and looked into how different types of exercise affect the brain.<br/>
+            <p class="text-center" id="paragraph"></p>
+            <div class="total">
+                  <p>Salsa:<input type="number" name="salsa" value="" id="salsa"></p>
+                  <p>Yoga:<input type="number" name="yoga" value="" id="yoga"</p>
+                  <p>Aerobics:<input type="number" name="aerobics" value="" id="aerobics"></p>
+                  <button type="submit" name="button" id="sub" onclick="getConfirmation();">Book</button>
+                  <button type="submit" name="button" id="ask">vaccancies</button>
+                </div>
+         </div>
 
-            In this review, published in British Journal of Sports Medicine (2017; doi: 10.1136/bjsports-2016-096587), the researchers assessed results from 39 studies. The scientists focused on five forms of physical activity—aerobic training, resistance exercise, “multicomponent training” (combination aerobic and resistance), tai chi and yoga—and studied how those modalities affected brain capacity, attention, executive function, memory and working memory. They also evaluated exercise session duration.<br/>
-
-            <br/>To be included in the review, studies had to have included participants aged 50 and over who exercised in supervised training sessions for more than 4 weeks. There were no baseline requirements for cognitive ability; however, studies were excluded if the participants presented with a neurologic disorder or mental illness. What did the researchers find?<br/>
-
-            <br/>Aerobic exercise, resistance training and multicomponent training were all associated with gains in cognitive function when exercise intensity was moderate or vigorous, and gains were also seen with tai chi.<br/>
-
-            <br/>Optimal session duration was 45–60 minutes. “When exercise mode was examined as a moderator, all modes of exercise produced significant and positive effect estimates, except for yoga,” the authors said. They concluded, “This meta-analysis showed that physical exercise interventions are effective at improving the cognitive function of older adults, regardless of baseline cognitive status.<br/>
-
-            <br/>Interventions of aerobic, resistance training, multicomponent training and tai chi were similarly effective. The findings suggest that an exercise program with components of both aerobic and resistance-type training, of at least moderate intensity and at least 45 minutes per session, on as many days of the week as possible, is beneficial to cognitive function in adults aged >50 years.”</p>
-          </div>
-        </div>
 
         <!--footer section-->
         <div class="row" id="footer">
