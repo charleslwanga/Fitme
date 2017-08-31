@@ -1,5 +1,7 @@
 /*custom css*/
-
+.container-fluid{
+  width: 100%;
+}
 body {
   padding-left: 0px;
 }

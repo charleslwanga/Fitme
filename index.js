@@ -38,10 +38,7 @@ firebase.initializeApp(config);
        });
     });
 });
-function subscribe(){
-  alert("Welcome to Fitme")
-}
-  // retrieving data
+// retrieving data
 // $(document).ready(function(){
 //   var rootRef =firebase.database().ref().child("users");
 //   rootRef.on("child_added", snap =>{
