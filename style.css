@@ -1,6 +1,7 @@
 /*custom css*/
 .container{
   width:100%;
+
 }
 body {
   padding-left: 0px;
@@ -160,14 +161,14 @@ tr:nth-child(even) {
 
 #footer {
   background-color: #DD4861;
-  height: 500px;
+  height: 550px;
   position: relative;
   top: 1000px;
   padding-top: 50px;
 }
 #footer1 {
   background-color: #DD4861;
-  height: 500px;
+  height: 550px;
   position: relative;
   top: 200px;
   padding-top: 50px;
@@ -189,15 +190,25 @@ tr:nth-child(even) {
   left: 450px;
 }
 
-#email {
+#js-email {
   background-color: #FFFFFF;
   border-color: transparent;
   border-opacity: 0.50;
   color: #393939;
   padding-left: 30px;
-  height: 50px;
+  height: 40px;
   width: 450px;
-  font-size: 19px;
+  font-size: 15px;
+}
+#js-password{
+  background-color: #FFFFFF;
+  border-color: transparent;
+  border-opacity: 0.50;
+  color: #393939;
+  padding-left: 70px;
+  height: 40px;
+  width: 450px;
+  font-size: 15px;
 }
 
 #submit {
@@ -228,7 +239,7 @@ tr:nth-child(even) {
 .social-icons {
   position: relative;
   top: 120px;
-  left: 620px;
+  left: 500px;
   font-size: 60px;
   color: #FFFFFF;
 }
@@ -239,9 +250,9 @@ tr:nth-child(even) {
 }
 #description1 {
   position: relative;
-  top:0;
-  height:500px;
-  width: 50%;
+  top:80px;
+  /*height:500px;*/
+  width: 80%;
 }
 
 #exercise {
@@ -249,8 +260,8 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 #exercise1 {
-  margin-top: 20px;
-  margin-left: 100px;
+  margin-top: 0px;
+  left: 0px;
   font-weight: bold;
 }
 #posline5 {

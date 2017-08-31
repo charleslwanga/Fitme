@@ -47,9 +47,9 @@
 
         <!--jumbotron section-->
         <div class="row jumbotron">
-          <h3 id="center">HELLO WELCOME TO OUR FITNESS SITE</h3>
+          <h3 id="center">ARE YOU READY TO BE FIT?</h3>
           <h1 id="fitme2">FITME</h1>
-          <h2 id="knowmore">KNOW MORE</h2>
+          <h2 id="knowmore">CHECK US OUT</h2>
           <button type="button" class="btn" id="button">CLASSES</button>
           <img src="image3.jpg" alt="fitness girl" height="500px" id="top">
         </div>
@@ -58,13 +58,13 @@
         <div class="row fixed-top" id="row2">
           <a id="home" class="all"href="index.html"><label>HOME</label></a>
           <p class="posline">|</p>
-          <a id="news" class="all"><label>NEWS</label></a>
+          <a id="news" class="all" href="index.html"><label>NEWS</label></a>
           <p class="posline">|</p>
-          <a id="recipe" class="all"><label>RECIPE</label></a>
-          <p class="posline">|</p>
+          <!-- <a id="recipe" class="all"><label>RECIPE</label></a>
+          <p class="posline">|</p> -->
           <a id="classes" class="all"><label>CLASSES</label></a>
           <p class="posline">|</p>
-          <a id="about" class="all"><label>ABOUT</label></a>
+          <a id="about" href="#subscribe"class="all"><label>SUBSCRIBE</label></a>
         </div>
 
         <!--timetable-->
@@ -114,13 +114,30 @@
           <!--charges-->
             <div class=" price col-lg-3">
               <h5>Charges for the classes</h5>
-              <p>5 classes at ksh 2,500/=</p>
-              <p>8 classes at ksh 3,000/=</p>
-              <p>10 classes at ksh 3,500/=</p>
-              <p>15 classes at ksh 4,500/=</p>
+              <p>5 classes at ksh 10,500/=</p>
+              <p>8 classes at ksh 12,000/=</p>
+              <p>10 classes at ksh 13,500/=</p>
+              <p>15 classes at ksh 15,500/=</p>
             </div>
-            <div class="total col-lg-3 ">
-              <div class="mainText" ><input id="mainText" type="text" name="" value=""></div>
+          </div>
+            <!-- <div class="total col-lg-3 ">
+               <h4>Booked Classes</h4>
+              <table>
+                <th>
+                  <tr>
+                    <td>aerobics</td>
+                    <td>salsa</td>
+                    <td>yoga</td>
+                  </tr>
+                </th>
+                <tbody id="tablebody">
+
+                </tbody>
+
+              </table>
+            </div> -->
+
+              <!-- <div class="mainText" ><input id="mainText" type="text" name="" value=""></div>
 
                   <p>Salsa:<input id="mainText" type="number" name="salsa" value="" id="salsa"></p>
                   <p>Yoga:<input id="mainText" type="number" name="yoga" value="" id="yoga"</p>
@@ -130,16 +147,15 @@
 
                   <button type="submit" name="button" id="ask">vaccancies</button>
 
-                </div>
+                </div> -->
 
-              </div>
 
           <div id="description1">
-            <h2 class="text-center" id="exercise1">Sign up here!</h2>
+            <h2 class="text-center" id="exercise1">Book your classes today</h2> -->
             <p class="text-center" id="posline5">-</p>
-            <div class="text-center" id="paragraph">
+            <script src="https://embed.zapla.co/embed.js#account=2227" async defer></script>
 
-              <form class="js-form"  method="post">
+              <!-- <form class="js-form"  method="post" >
                 <div class="form-group">
                   <label for="js-name">Name:</label>
                   <input type="name" id="js-name" class="form-control" value="">
@@ -173,26 +189,27 @@
 
                 </div>
 
-              <button id="js-submit" type="submit" name="button">Submit</button>
+              <button id="js-submit" type="submit" name="button" onclick="getConfirmation();">Submit</button>
 
 
-              </form>
-            </div>
-
-         </div>
+              </form> -->
+             </div>
 
 
         <!--footer section-->
         <div class="row" id="footer1">
           <div id="header">
-            <h1 class="text-center">SUBSCRIBE HERE</h1>
+            <h1 class="text-center">SUSCRIBE</h1>
             <P class="text-center" id="posline3">-</P>
           </div>
 
           <div id="subscribe">
-            <form>
-              <input type="text" value="Email Address" id="email">
-              <input type="submit" value="Subscribe"  class="btn" id="submit">
+            <h1>We are here to make you fit</h1>
+            <form class="js-form">
+            <input type="email" id="js-email" class="form-control" value="Email">
+            <input type="password" id="js-password" value="Password">
+            <button id="submit" type="submit" name="button" onclick="subscribe">Subscribe</button>
+
             </form>
             <!-- Begin MailChimp Signup Form -->
             <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -223,33 +240,21 @@
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             <!--End mc_embed_signup-->
           <!-- </div>  -->
-
           </div>
 
         <div class="social-icons">
-          <a href="#" class="facebook w3l" title="Go to Our Facebook Page"><i class="fa w3l fa-facebook-square" aria-hidden="true"></i></a>
-          <a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a>
-          <a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a>
-          <a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a>
-          <a href="#" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/phillysalsabar/" class="facebook w3l" title="Go to Our Facebook Page"><i class="fa w3l fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/hotsalsadance?lang=en" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a>
+          <a href="https://plus.google.com/communities/116932479456666335222" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/laurasykora/?hl=en" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/watch?v=kuiKlLS0I8w" class="youtube w3layouts" title="Go to Our Youtube Channel"><i class="fa w3layouts fa-youtube-square" aria-hidden="true"></i></a>
         </div>
 
         </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
 
-    </script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
-    <script src="/__/firebase/4.2.0/firebase-app.js"></script>
-    <script src="/__/firebase/4.2.0/firebase-auth.js"></script>
-    <script src="/__/firebase/4.2.0/firebase-database.js"></script>
-    <script src="/__/firebase/4.2.0/firebase-messaging.js"></script> -->
 
   <script src="index.js">
 

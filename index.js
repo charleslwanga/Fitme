@@ -11,16 +11,16 @@ firebase.initializeApp(config);
 
   $(".js-form").on('submit',event =>{
         event.preventDefault();
-       var name=$("#js-name").val();
+      //  var name=$("#js-name").val();
        var email=$("#js-email").val();
        var password=$("#js-password").val();
-       var salsa=$("#js-salsa").val();
-       var yoga=$("#js-yoga").val();
-       var aerobics=$("#js-aerobics").val();
-       console.log(name,email,password,salsa,yoga,aerobics);
+      //  var salsa=$("#js-salsa").val();
+      //  var yoga=$("#js-yoga").val();
+      //  var aerobics=$("#js-aerobics").val();
+       console.log(email,password);
        firebase.auth().createUserWithEmailAndPassword(email, password)
        .then(user => {
-         firebase.database().ref('classes').push({salsa, yoga, aerobics,});
+         firebase.database().ref('Subscribe').push({email,password,});
          })
          .catch(function(error) {
          // Handle Errors here.
@@ -30,8 +30,7 @@ firebase.initializeApp(config);
          });
          firebase.auth().signInWithEmailAndPassword(email,password)
           .then(user => {
-          firebase.database().ref('classes').push({
-           salsa, yoga, aerobics,
+          firebase.database().ref('Subscribe').push({email,password
            });
           })
          .catch(error =>{
@@ -39,6 +38,64 @@ firebase.initializeApp(config);
        });
     });
 });
+function subscribe(){
+  alert("Welcome to Fitme")
+}
+  // retrieving data
+// $(document).ready(function(){
+//   var rootRef =firebase.database().ref().child("users");
+//   rootRef.on("child_added", snap =>{
+//     var aerobics1=snap.child("aerobics").val();
+//     var salsa1=snap.child("salsa").val();
+//     var yoga1=snap.child("yoga").val();
+//
+//      $("#tablebody").append("<tr><td>" + aerobics1 + "</td><td>" + salsa1 +
+//        "</td><td>" + yoga1 + "</td></tr>");
+//
+//   });
+// });
+// function getConfirmation(){
+//                var retVal = confirm("Confirm");
+//                if( retVal == true ){
+//
+//                   alert("Your classes have been booked");
+//                }
+//                else{
+//                 alert("Your classes have not been booked");
+//                }
+//   }
+
+// for (DataSnapshot postSnapshot : snapshot.getChildren(salsa)) {
+//
+//     //Getting the data from snapshot
+//
+//     SalsaExpenditure salsaExpenditure=postSnapshot.getValue(SalsaExpenditure.class);
+//
+//     //Adding it to a string
+//
+//     amount+=amount+salsaExpenditure.getAmount();
+//
+//
+//
+//     expenseList.add(expenses);
+//
+//         if (expenseList.size() == 1) {
+//             adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, expenseList);
+//             listview.setAdapter(adapter);
+//         } else if (expenseList.size() > 1) {
+//
+//         }
+//         System.out.println(expenses);
+//         listview.setAdapter(adapter);
+//     }
+// public String getItem() {
+//     return item;
+// }
+//
+// public void setItem(String item) {
+//     this.item = item;
+// }
+//
 
 
 
